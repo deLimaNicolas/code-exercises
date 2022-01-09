@@ -6,6 +6,8 @@ pub fn move_zeroes(nums: &mut Vec<i32>) -> () {
         println!("{:?}", count);
         
         nums[i..].rotate_left(count);
+        println!("{:?}", nums[i..].iter());
+        println!("{:?}", nums);
         zeros += count;
         i += 1;
     }
